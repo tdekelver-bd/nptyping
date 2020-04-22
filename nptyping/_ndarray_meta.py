@@ -92,6 +92,7 @@ class _NDArrayMeta(SubscriptableType):
 class _NDArray(metaclass=_NDArrayMeta):
     _shape = (Any, ...)
     _type = Any
+    _special = True
 
     @classmethod
     def _after_subscription(cls, item: Any) -> None:

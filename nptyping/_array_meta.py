@@ -45,6 +45,7 @@ class _Array(metaclass=_ArrayMeta):
     # This class exists to keep the Array class as clean as possible.
     __origin__ = 'Array'
     __args__ = tuple()
+    _special = True
     _ROWCOL_TYPES = [int, Ellipsis_, NoneType]
     generic_type = None
     rows = ...
